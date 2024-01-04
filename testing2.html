@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+<body>
+<script>
+    async function getanimaldata(){
+        const response=await fetch("https://fakerapi.it/api/v1/persons");
+        const finaldata=await response.json()
+        console.log(finaldata);
+    }
+</script>
+<button onclick="getanimaldata()">Get animal data</button>
+</body>
+
+</html>
