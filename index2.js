@@ -25,3 +25,5 @@ app.get("/health-checkup", function (req, res) {
 });
 
 app.listen(3006);
+
+console.log("successfully created a HTTPS server")
